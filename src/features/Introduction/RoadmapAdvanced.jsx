@@ -1,5 +1,5 @@
 import React from 'react';
-import { Stack, colors } from '@mui/material';
+import { colors, Stack } from '@mui/material';
 import RunCircleIcon from '@mui/icons-material/RunCircle';
 
 const RoadmapAdvanced = () => {

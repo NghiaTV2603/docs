@@ -1,5 +1,5 @@
 import React from 'react';
-import { Stack, Box, Typography, colors } from '@mui/material';
+import { colors, Stack, Typography } from '@mui/material';
 import Header from './Header.jsx';
 import '../App.css';
 import logo from '../assets/logo.svg';
@@ -28,9 +28,7 @@ const WellCome = () => {
           <Typography fontWeight={700} variant={'h5'}>
             Tran Van Nghia
           </Typography>
-          <Typography fontWeight={700} variant={'h6'}>
-            The Complete Web Development Course: Learn to Build Modern Websites
-          </Typography>
+
           <Stack
             px={3}
             py={1}

@@ -5,7 +5,7 @@ import MuiAccordion from '@mui/material/Accordion';
 import MuiAccordionSummary from '@mui/material/AccordionSummary';
 import MuiAccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
-import { Stack, colors } from '@mui/material';
+import { colors, Stack } from '@mui/material';
 import './../appbar.css';
 import { useNavigate } from 'react-router-dom';
 

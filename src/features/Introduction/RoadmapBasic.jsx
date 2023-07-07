@@ -1,12 +1,11 @@
 import React from 'react';
 import {
+  CardMedia,
+  colors,
+  Grid,
+  IconButton,
   Stack,
   Typography,
-  colors,
-  IconButton,
-  Grid,
-  Paper,
-  CardMedia,
 } from '@mui/material';
 import HomeIcon from '@mui/icons-material/Home';
 import './../../appbar.css';

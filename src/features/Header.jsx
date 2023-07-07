@@ -5,15 +5,11 @@ import CssBaseline from '@mui/material/CssBaseline';
 import Divider from '@mui/material/Divider';
 import Drawer from '@mui/material/Drawer';
 import IconButton from '@mui/material/IconButton';
-import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
-import ListItemButton from '@mui/material/ListItemButton';
-import ListItemText from '@mui/material/ListItemText';
 import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
-import { colors, Stack } from '@mui/material';
+import { colors } from '@mui/material';
 import SideBar from './SideBar.jsx';
 import { useNavigate } from 'react-router-dom';
 
@@ -87,6 +83,19 @@ function Header(props) {
           >
             Nghia TV
           </Typography>
+          <Button
+            sx={{
+              display: { xs: 'block', sm: 'none' },
+              marginLeft: 1.5,
+              textTransform: 'none',
+            }}
+            ml={4}
+            onClick={() => {
+              navigate('/welcome');
+            }}
+          >
+            Home
+          </Button>
 
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
             <Button

@@ -1,4 +1,4 @@
-import { Box, colors, Stack } from '@mui/material';
+import { colors, Stack } from '@mui/material';
 import Header from './Header.jsx';
 import SideBar from './SideBar.jsx';
 import { Outlet } from 'react-router-dom';
@@ -9,7 +9,6 @@ const Home = () => {
       <Header />
       <Stack mt={8.1} direction={'row'} sx={{ overflow: 'auto' }}>
         <Stack
-          // height={'90.5vh'}
           bgcolor={colors.grey[900]}
           sx={{ display: { xs: 'none', sm: 'none', md: 'block' } }}
         >
@@ -19,7 +18,7 @@ const Home = () => {
             </Stack>
           </div>
         </Stack>
-        <Stack>
+        <Stack width={'100%'}>
           <Outlet />
         </Stack>
       </Stack>
