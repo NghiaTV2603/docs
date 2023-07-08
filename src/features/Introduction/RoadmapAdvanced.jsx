@@ -216,7 +216,34 @@ const RoadmapAdvanced = () => {
             projects.
           </Typography>
           <Stack direction={'row'} justifyContent={'space-between'}>
-            <Stack></Stack>
+            <Stack
+              width={300}
+              border={1}
+              borderRadius={4}
+              p={2}
+              direction="column"
+              // alignItems="flex-end"
+              sx={{
+                '&:hover': {
+                  borderColor: colors.blue[600],
+                  cursor: 'pointer',
+                },
+              }}
+              onClick={() => {
+                navigate('/introduction/roadmap-basic');
+              }}
+            >
+              <Typography color={colors.grey[200]} fontWeight={500}>
+                Back
+              </Typography>
+              <Typography
+                fontSize={18}
+                fontWeight={600}
+                color={colors.blue[600]}
+              >
+                {`<< Roadmap Advanced`}
+              </Typography>
+            </Stack>
             <Stack
               width={300}
               border={1}
