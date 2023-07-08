@@ -12,6 +12,11 @@ import { useNavigate } from 'react-router-dom';
 import HomeIcon from '@mui/icons-material/Home.js';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { materialDark } from 'react-syntax-highlighter/dist/cjs/styles/prism/index.js';
+import logo from '../../assets/logo.svg';
+import logoNode from '../../assets/nodejs.svg';
+import '../../App.css';
+import '../../appbar.css';
+import logoMongo from '../../assets/mongo.svg';
 
 const RoadmapAdvanced = () => {
   const Content = () => {
@@ -62,6 +67,9 @@ const RoadmapAdvanced = () => {
           >
             1. React.js
           </Typography>
+          <Stack width={'100%'}>
+            <img src={logo} className="App-logo" alt="logo" />
+          </Stack>
           <Typography variant={'subtitle'}>
             React.js is a powerful JavaScript library for building user
             interfaces. In this section, we will explore the core concepts and
@@ -103,18 +111,15 @@ const RoadmapAdvanced = () => {
           >
             2. Express
           </Typography>
-          {/*<CardMedia*/}
-          {/*  component="img"*/}
-          {/*  sx={{ backgroundColor: colors.grey[800] }}*/}
-          {/*  height="500"*/}
-          {/*  image="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Client-server-model.svg/1280px-Client-server-model.svg.png"*/}
-          {/*  alt="Paella dish"*/}
-          {/*/>*/}
+          <Stack width={'100%'}>
+            <img src={logoNode} className="App-logo" alt="logo" />
+          </Stack>
           <Typography variant={'subtitle'}>
             Express is a flexible and minimalist web application framework for
             Node.js. In this section, we will focus on building server-side
             applications with Express. Some of the key topics to cover include:
           </Typography>
+
           <ul>
             <li>
               Routing: Understand how to define routes and handle HTTP requests
@@ -142,6 +147,9 @@ const RoadmapAdvanced = () => {
           >
             3. MongoDB
           </Typography>
+          <Stack width={'100%'}>
+            <img src={logoMongo} className="App-logo" alt="logo" />
+          </Stack>
           <Typography variant={'subtitle'}>
             MongoDB is a popular NoSQL database used in modern web development.
             In this section, we will explore the fundamentals of MongoDB and its
@@ -255,8 +263,10 @@ const RoadmapAdvanced = () => {
       py={1}
       color={colors.grey[300]}
     >
-      <Typography>Introduction Web Development Course</Typography>
-      <Typography>Introduction to Client-Server Model</Typography>
+      <Typography>ReactJS</Typography>
+      <Typography>ExpressJS</Typography>
+      <Typography>MongoDB</Typography>
+      <Typography>Project</Typography>
     </Stack>
   );
   return (
