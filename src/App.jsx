@@ -5,6 +5,7 @@ import { BrowserRouter, useRoutes } from 'react-router-dom';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import * as colors from '@mui/material/colors';
 import routes from './app/routes.jsx';
+import { Helmet } from 'react-helmet';
 function App() {
   const theme = React.useMemo(
     () =>
@@ -32,6 +33,13 @@ function App() {
   const routing = useRoutes(routes);
   return (
     <ThemeProvider theme={theme}>
+      <Helmet>
+        <title>Docs</title>
+        <link
+          rel="shortcut icon"
+          href="https://www.pngitem.com/pimgs/m/326-3260623_transparent-healthcare-icon-png-graphic-design-png-download.png"
+        />
+      </Helmet>
       <CssBaseline />
       {routing}
     </ThemeProvider>

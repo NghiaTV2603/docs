@@ -3,6 +3,7 @@ import Home from '../features/Home.jsx';
 import RoadmapBasic from '../features/Introduction/RoadmapBasic.jsx';
 import RoadmapAdvanced from '../features/Introduction/RoadmapAdvanced.jsx';
 import WellCome from '../features/WellCome.jsx';
+import ComingSoon from '../features/ComingSoon.jsx';
 
 const routes = [
   {
@@ -22,27 +23,27 @@ const routes = [
           },
           {
             path: '/setup/react',
-            element: <RoadmapAdvanced />,
+            element: <ComingSoon />,
           },
           {
             path: '/setup/node',
-            element: <RoadmapAdvanced />,
+            element: <ComingSoon />,
           },
           {
             path: '/setup/deploy',
-            element: <RoadmapAdvanced />,
+            element: <ComingSoon />,
           },
           {
             path: '/basic/html',
-            element: <RoadmapAdvanced />,
+            element: <ComingSoon />,
           },
           {
             path: '/basic/css',
-            element: <RoadmapAdvanced />,
+            element: <ComingSoon />,
           },
           {
             path: '/basic/javaScript',
-            element: <RoadmapAdvanced />,
+            element: <ComingSoon />,
           },
         ],
       },
